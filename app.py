@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
-
+from sklearn.linear_model._base import _preprocess_data
 # Load the Random Forest CLassifier model
 filename = 'first-innings-score-lr-model.pkl'
 regressor = pickle.load(open(filename, 'rb'))
@@ -11,7 +11,28 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+	return render_template('page1.html')
+@app.route('/live')
+def home1():
+	return render_template('live.htm')
+@app.route('/page2')
+def home2():
+	return render_template('page2.htm')
+@app.route('/page3')
+def home3():
+	return render_template('page3.htm')
+@app.route('/page4')
+def home4():
+	return render_template('page4.htm')
+@app.route('/index')
+def home5():
 	return render_template('index.html')
+@app.route('/aboutus')
+def home6():
+	return render_template('aboutus.htm')
+@app.route('/schedules')
+def home7():
+	return render_template('schedules.htm')
 
 @app.route('/predict', methods=['POST'])
 def predict():

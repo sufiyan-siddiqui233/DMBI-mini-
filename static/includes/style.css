@@ -1,0 +1,130 @@
+#main{
+    height:80%;
+    width:100%;
+}
+.container{
+    width:75%;
+}	
+.abovefooter{
+	height:80%;
+}
+.footer{
+	width:120%;
+	height:20%;
+	position:relative;
+	overflow:hidden;
+	
+}
+
+div.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: RebeccaPurple;
+	color:white;
+}
+div.navbar li,.navbar li a{
+    display: inline-block;
+	text-decoration:none;
+	color:white;
+    text-align: center;
+    padding: 9px 8px;
+	float:left;
+	letter-spacing:1px;
+	font-size:20px;
+	font-family: Garamond;
+}
+div.navbar li:hover{
+	background-color:purple;
+	color:white;
+	}
+.matchtype ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303030;
+}
+.matchtype li {
+    float: left;
+}
+
+.matchtype li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 26px;
+    text-decoration: none;
+	letter-spacing:1px;
+	font-family:Verdana;
+}
+
+.matchtype li a:hover {
+    background-color: #111;
+}
+
+.rightsidebar{
+	background-color:#F5F5F5;
+	width:25%;
+	height:80%;
+	float:right;
+}
+div.rightsidebar li{
+	font-size: 16;
+	padding: 5px;
+}
+.rightsidebar li:hover{
+	color:blue;
+	font-weight: bold;
+}
+.leftsidebar{
+	margin-top:-25;
+	width:15%;
+	height:80%;
+	float:left;
+}
+
+.keyseries th{
+	color: #505050;
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.keyseries th:hover{
+	font-weight: bold;
+	text-decoration:underline;
+	color:black;
+	
+}
+
+.dropdown {
+    display: inline-block;
+	margin-top:10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    min-width: 110px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.foot{
+	float:bottom;
+	width: 100%;
+	height:30%;
+	background-color:black;
+	margin:0;
+}
